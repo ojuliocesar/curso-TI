@@ -66,6 +66,10 @@
                 text-align: center;
                 margin-bottom: 50px;
             }
+
+            .main-title.-h2 {
+                margin-top: 50px;
+            }
         </style>
     </head>
     <body>
@@ -76,7 +80,7 @@
                 <p>Hoje, iremos ver como "Hacker" o jogo, pra você mostrar seus pontos pro seu amiguinho e chamar ele de noob</p>
         </header>
         <main>
-            <h2 class="main-title">Hackeando o Dino</h2>
+            <h2 class="main-title -h2">Hackeando o Dino</h2>
 
             <h2 class="main-title">Imortal</h2>
 
@@ -85,18 +89,23 @@
 
                 <li>Clique com o botão direito na tela, e  clique em "inspecionar"</li>
                 <img src="img/inspecionar.png" alt="Inspecionar">
+
                 <li>Depois, vá para aba "Console"</li>
                 <img src="img/console.png" alt="console">
+
                 <li>Em seguida, digite: <span class="code">var original = Runner.prototype.gameOver</span><br><br>
                     (Isso irá nos abrir a porta para fuçar no Dino)></li>
                 <img src="img/1img.png" alt="Primeiro Código">
+
                 <li>Ainda na mesma tela, digite: <span class="code">Runner.prototype.gameOver = function () {}</span></li>
                 <img src="img/img2.png" alt="segundo código">
+
                 <li>Sendo direto, isso irá deixar o Dino Imortal</li>
+
                 <li>Ainda não saia do console, poderemos adicionar mais trapaças, como vou mostrar a seguir</li>
             </ul>
 
-            <h2 class="main-title" style="margin-top: 50px;">Super Velocidade</h2>
+            <h2 class="main-title -h2">Super Velocidade</h2>
             <ul>
                 <li>Ainda em Console, digite: <span class="code">Runner.instance_.setSpeed(100)</span></li>
                 <img src="img/img3.png" alt="terceiro código">
