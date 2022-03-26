@@ -9,3 +9,5 @@ https://getcssscan.com/css-box-shadow-examples
 Imagens sem direitos autorais: 
 Pixabay
 Unsplash
+
+pdf CSS: https://www.w3c.br/pub/Cursos/CursoCSS3/css-web.pdf

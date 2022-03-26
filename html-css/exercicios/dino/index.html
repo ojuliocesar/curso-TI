@@ -3,34 +3,114 @@
     <head>
         <meta charset="UTF-8">
         <title>Dino</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        
+        <style>
+            * {
+                font-family: 'Fira Code';
+                font-weight: 500;
+                color: #fff;
+            }
+
+            body {
+                background-color: #161b22;
+                padding-left: 15px;
+                padding-bottom: 20px;
+                
+            }
+
+            ul {
+                list-style-type: decimal;
+                margin-top: 30px;
+            }
+
+            li {
+                margin-bottom: 40px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            img {
+                margin-bottom: 20px;
+                width: 400px;
+            }
+
+            iframe {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .code {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 18px;
+
+                padding: 10px 15px;
+                border-radius: 15px;
+                background-color: #010409;
+            }
+
+            .wrapper {
+                margin-top: 80px;
+                margin-bottom: 100px;
+            }
+
+            .main-title {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1>Dino</h1>
+            <h1 class="main-title">T-Rex Game</h1>
 
-            <p>O jogo Dino foi criado em 2014, pela Google, para entreter pessoas que estão Offline da interwebs</p>
-            <p>Hoje, iremos ver como Hacker o jogo, pra você mostrar seus pontos pro seu amiguinho e chamar ele de noob</p>
+                <p>O T-Rex Game foi criado em 2014, pela Google, para manter pessoas intretidas ao estarem Offline da internet</p>
+                <p>Hoje, iremos ver como "Hacker" o jogo, pra você mostrar seus pontos pro seu amiguinho e chamar ele de noob</p>
         </header>
         <main>
-            <h2>Hackeando o Dino</h2>
+            <h2 class="main-title">Hackeando o Dino</h2>
 
-            <h3>Imortal</h3>
+            <h2 class="main-title">Imortal</h2>
 
             <ul>
-                <li>Primeiramente, acesse o site: (chrome://dino)</li>
-                <li>Especione o elemento, seguindo a imagem a seguir</li>
-                <li>Depois, vá para aba "console"</li>
-                <li>Em seguida, digite: var original = Runner.prototype.gameOver</li>
-                <li>Ainda na mesma tela, digite: Runner.prototype.gameOver = function () {}</li>
-                <li>Depois disso, é só dar "Enter" e se divertir</li>
+                <li>Primeiramente, acesse o site: <span class="code">chrome://dino</span></li>
+
+                <li>Clique com o botão direito na tela, e  clique em "inspecionar"</li>
+                <img src="img/inspecionar.png" alt="Inspecionar">
+                <li>Depois, vá para aba "Console"</li>
+                <img src="img/console.png" alt="console">
+                <li>Em seguida, digite: <span class="code">var original = Runner.prototype.gameOver</span><br><br>
+                    (Isso irá nos abrir a porta para fuçar no Dino)></li>
+                <img src="img/1img.png" alt="Primeiro Código">
+                <li>Ainda na mesma tela, digite: <span class="code">Runner.prototype.gameOver = function () {}</span></li>
+                <img src="img/img2.png" alt="segundo código">
                 <li>Sendo direto, isso irá deixar o Dino Imortal</li>
+                <li>Ainda não saia do console, poderemos adicionar mais trapaças, como vou mostrar a seguir</li>
             </ul>
 
-            <h3>Super Velocidade</h3>
+            <h2 class="main-title">Super Velocidade</h2>
             <ul>
-                <li>Em console, digite: Runner.instance_.setSpeed(100)</li>
-                <li>Isso irá deixar o nosso querido Dino, mais fácil</li>
+                <li>Ainda em Console, digite: <span class="code">Runner.instance_.setSpeed(100)</span></li>
+                <img src="img/img3.png" alt="terceiro código">
+                <li>Isso irá deixar o nosso querido Dino mais rápido (na verdade, muito mais rápido)</li>
             </ul>
         </main>
+
+        <footer>
+            <div class="wrapper">
+                <p>
+                    Bom, agora seu Dino irá avançar e avançar para sempre, para não ficar entediado enquanto seu Dino bata todos os recordes do mundo, assista 1 hora de Pica Pau antigo, boa sorte companheiro
+                </p>
+            </div>
+
+            <iframe width="710" height="393" src="https://www.youtube.com/embed/3pg0bbTzqcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </footer>
     </body>
 </html>
