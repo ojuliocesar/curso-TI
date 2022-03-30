@@ -8,9 +8,10 @@ body {
 }
 
 h2 {
-    background-color: blueviolet;
+    background-color: #545454d8;
     color: #fff;
     padding: 10px;
+    text-align: center;
 }
 
 /* Estilo da tabela */
@@ -20,15 +21,41 @@ table {
     border-collapse: collapse;
     margin: 0 auto;
     border: 1.5px solid #000 !important;
+    background-color: #fff;
 }
-
-table, th, td {
+th, td {
     border: 1px solid #000;
     text-align: center;
+    padding: 10px;
 }
 
-th, td {
-    padding: 10px;
+th {
+    height: 55px;
+}
+
+caption {
+    caption-side: bottom;
+    text-align: left;
+}
+
+tr:nth-child(1) {
+    background-color: #ffe400;
+}
+
+tr:nth-child(2) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(3) {
+    background-color: #007315;
+}
+
+tr:nth-child(4) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(5) {
+    background-color: #c20000;
 }
 
 /* Final do estilo da tabela */
