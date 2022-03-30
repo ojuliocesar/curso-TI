@@ -48,6 +48,7 @@ tr:nth-child(2) {
 
 tr:nth-child(3) {
     background-color: #007315;
+    color: #fff;
 }
 
 tr:nth-child(4) {
@@ -56,6 +57,6 @@ tr:nth-child(4) {
 
 tr:nth-child(5) {
     background-color: #c20000;
+    color: #fff;
 }
-
 /* Final do estilo da tabela */
