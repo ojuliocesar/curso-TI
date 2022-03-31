@@ -1,0 +1,40 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: blueviolet;
+    float: left;
+    width: 100%;
+}
+
+nav>ul {
+    /* remove o icone (marcador/bolinha) do li */
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    /* modifica a exibição da lista para bloco em linha, ou seja, um li na frente do outro */
+    display: inline-block;
+    padding: 5px
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    transition: transform 100ms;
+}
+
+nav ul li a:hover {
+    background-color: rgb(107, 36, 174);
+}
