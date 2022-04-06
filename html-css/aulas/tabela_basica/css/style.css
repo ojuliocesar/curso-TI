@@ -21,7 +21,6 @@ table {
     border-collapse: collapse;
     margin: 0 auto;
     border: 1.5px solid #000 !important;
-    background-color: #fff;
 }
 th, td {
     border: 1px solid #000;
