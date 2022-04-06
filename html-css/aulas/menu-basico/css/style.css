@@ -11,6 +11,7 @@ nav {
     background-color: blueviolet;
     float: left;
     width: 100%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 nav>ul {
@@ -37,4 +38,32 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: rgb(107, 36, 174);
+}
+
+#icones {
+    background-color: coral;
+    float: left;
+    width: 100%;
+    height: 500px;
+}
+
+#imagens {
+    background-color:crimson;
+    float: left;
+    width: 100%;
+    height: 500px;
+}
+
+#videos {
+    background-color: deeppink;
+    float: left;
+    width: 100%;
+    height: 500px;
+}
+
+#mapas {
+    background-color: dodgerblue;
+    float: left;
+    width: 100%;
+    height: 500px;
 }
