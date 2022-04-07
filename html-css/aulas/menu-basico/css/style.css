@@ -1,6 +1,7 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
 }
 
 nav {
-    background-color: blueviolet;
+    background-color: #E8C7A9;
     float: left;
     width: 100%;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -16,7 +17,6 @@ nav {
 
 nav>ul {
     /* remove o icone (marcador/bolinha) do li */
-    list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ nav>ul {
 nav>ul>li {
     /* modifica a exibição da lista para bloco em linha, ou seja, um li na frente do outro */
     display: inline-block;
-    padding: 5px
+    padding: 5px;
 }
 
 nav ul li a {
@@ -37,33 +37,78 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(107, 36, 174);
+    background-color: #ebd5c1;
+}
+
+h2 {
+    margin-left: 15px;
 }
 
 #icones {
-    background-color: coral;
+    background-color: #F2EBDC;
     float: left;
     width: 100%;
-    height: 500px;
+    height: 500px;  
+}
+
+.icones-coluna {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 15px;
 }
 
 #imagens {
-    background-color:crimson;
+    background-color: #ebd5c1;
     float: left;
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 #videos {
-    background-color: deeppink;
+    background-color: #F2EBDC;
     float: left;
     width: 100%;
     height: 500px;
 }
 
 #mapas {
-    background-color: dodgerblue;
+    background-color: #ebd5c1;
     float: left;
     width: 100%;
     height: 500px;
+}
+
+.icones-img {
+    width: 150px;
+    height: 130px;
+    margin: 0 40px 10px 40px;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.imagem-coluna {
+    width: 100%;
+    float: left;
+}
+
+figure {
+    width: 25%;
+    float: left;
+    transition: transform 100ms;
+}
+
+figure:hover {
+    transform: scale(1.03);
+}
+
+.imagens-galeria {
+    width: 100%;
+    height: 160px;
+}
+
+figcaption {
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
 }
