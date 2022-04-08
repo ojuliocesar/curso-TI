@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-    background-color: #E8C7A9;
+    background-color: #d4baa1;
     float: left;
     width: 100%;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -93,9 +93,10 @@ h2 {
 }
 
 figure {
-    width: 25%;
+    width: 24%;
     float: left;
     transition: transform 100ms;
+    margin: 0.5%;
 }
 
 figure:hover {
