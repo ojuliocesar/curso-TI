@@ -69,7 +69,7 @@ h2 {
     background-color: #F2EBDC;
     float: left;
     width: 100%;
-    height: 500px;
+    height: 1500px;
 }
 
 #mapas {
@@ -114,4 +114,11 @@ figcaption {
     text-align: center;
     margin: 5px;
     font-weight: bold;
+}
+
+.tamanho-video {
+    width: 50%;
+    height: 360px;
+    float: left;
+    padding: 10px;
 }
