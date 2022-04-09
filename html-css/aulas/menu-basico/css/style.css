@@ -122,3 +122,7 @@ figcaption {
     float: left;
     padding: 10px;
 }
+
+.tamanho-video.-download {
+    height: auto;
+}
