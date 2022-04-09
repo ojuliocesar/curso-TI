@@ -101,6 +101,8 @@ figure {
 
 figure:hover {
     transform: scale(1.03);
+    cursor: pointer;
+    filter: brightness(110%) opacity(80%) grayscale(110%);
 }
 
 .imagens-galeria {
