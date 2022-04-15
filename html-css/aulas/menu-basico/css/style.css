@@ -20,7 +20,6 @@ nav {
 
 nav>ul {
     /* remove o icone (marcador/bolinha) do li */
-    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -85,23 +84,30 @@ h2 {
 }
 
 .icones-img {
-    width: 150px;
-    height: 130px;
-    margin: 0 40px 10px 40px;
-    padding: 7px;
+    width: 170px;
+    height: 150px;
     border-radius: 4px;
 }
 
-.imagem-coluna {
-    width: 100%;
+.icones-img-tamanho {
+    width: 50%;
     float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.imagem-coluna {
+    width: 25%;
+    float: left;
+    padding: 10px;
 }
 
 figure {
-    width: 24%;
+    width: 100%;
     float: left;
     transition: transform 100ms;
-    margin: 0.5%;
+    margin: 0;
+    padding: 0;
 }
 
 figure:hover {
@@ -164,3 +170,47 @@ html {
 :target {
     scroll-margin-top: 60px;
 }
+
+/* Final da versão DESKTOP */
+
+/* Início da versão mobile */
+
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        font-size: 10px;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    #icones {
+        margin-top: 215px;
+        height: auto;
+    }
+
+    .icones-coluna {
+        width: 100%;
+    }
+
+    .icones-img {
+        width: 100%;
+    }
+
+    .imagem-coluna {
+        width: 50%;
+    }
+
+    figcaption {
+        height: 37px;
+    }
+
+    .imagens-galeira {
+        height: 130px;
+    }
+
+    .tamanho-video {
+        width: 100%;
+    }
+}
+
+/* Final da versão mobile */
