@@ -24,7 +24,7 @@ nav>ul {
     padding: 0;
 }
 
-nav>ul>li {
+nav ul li {
     /* modifica a exibição da lista para bloco em linha, ou seja, um li na frente do outro */
     display: inline-block;
     padding: 5px;
@@ -42,6 +42,19 @@ nav ul li a:hover {
     background-color: #ebd5c1;
 }
 
+#icone-responsivo {
+    float: right;
+    display: none;
+}
+
+#exibe-menu {
+    display: inline;
+}
+
+.linha-esquerda {
+    float: left;
+}
+
 h2 {
     margin-left: 15px;
 }
@@ -51,7 +64,7 @@ h2 {
     float: left;
     width: 100%;
     height: 450px; 
-    margin-top: 60px; 
+    margin-top: 60px;
 }
 
 .icones-coluna {
@@ -59,6 +72,10 @@ h2 {
     height: 100%;
     float: left;
     padding: 15px;
+}
+
+.bars {
+    color: #fff;
 }
 
 #imagens {
@@ -171,6 +188,20 @@ html {
     scroll-margin-top: 60px;
 }
 
+/* CSS seta voltar ao topo */
+
+#topo {
+    color: #d4baa1;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transition: transform 100ms;
+}
+
+#topo:hover {
+    transform: scale(1.10);
+}
+
 /* Final da versão DESKTOP */
 
 /* Início da versão mobile */
@@ -184,8 +215,8 @@ html {
     }
 
     #icones {
-        margin-top: 215px;
         height: auto;
+        margin-top: 42px;
     }
 
     .icones-coluna {
@@ -210,6 +241,20 @@ html {
 
     .tamanho-video {
         width: 100%;
+    }
+
+    #icone-responsivo {
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    #exibe-menu {
+        display: none;
+    }
+
+    .teste {
+        display: block;
     }
 }
 

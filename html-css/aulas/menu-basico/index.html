@@ -19,25 +19,32 @@
     <div id="container">
         <nav>
             <ul>
-                <li>
+                <li class="linha-esquerda">
                     <a href=""><i class="fa-solid fa-shrimp"></i></a>
                 </li>
+
+                <li id="icone-responsivo">
+                    <i class="fa-solid fa-bars fa-2x bars"
+                    onclick="exibeMenu()"></i>
+                </li>
+
+                <div id="exibe-menu">
+                    <li>
+                        <a href="#icones"><i class="fa-solid fa-link fa-beat"></i> Ícones</a>
+                    </li>
+
+                    <li>
+                        <a href="#imagens"><i class="fa-solid fa-image fa-beat" style="--fa-animation-duration: 0.5s;" ></i> Imagens</a>
+                    </li>
+
+                    <li>
+                        <a href="#videos"><i class="fa-solid fa-circle-play fa-beat "></i> Vídeos</a>
+                    </li>
                     
-                <li>
-                    <a href="#icones"><i class="fa-solid fa-link fa-beat"></i> Ícones</a>
-                </li>
-
-                <li>
-                    <a href="#imagens"><i class="fa-solid fa-image fa-beat" style="--fa-animation-duration: 0.5s;" ></i> Imagens</a>
-                </li>
-
-                <li>
-                    <a href="#videos"><i class="fa-solid fa-circle-play fa-beat "></i> Vídeos</a>
-                </li>
-                
-                <li>
-                    <a href="#mapas"><i class="fa-solid fa-location-dot fa-beat" style="--fa-animation-duration: 0.5s;"></i> Mapas</a>
-                </li>
+                    <li>
+                        <a href="#mapas"><i class="fa-solid fa-location-dot fa-beat" style="--fa-animation-duration: 0.5s;"></i> Mapas</a>
+                    </li>
+                </div>
             </ul>
         </nav>
 
@@ -168,6 +175,12 @@
             </div>
         </main>
 
+        <a href="#container">
+            <div id="topo">
+                <i class="fa-solid fa-circle-arrow-up fa-3x"></i>
+            </div>    
+        </a>
+
         <footer>
             <p>&reg; Desenvolvido por: <span class="negrito">Julio Cesar</span></p>
             <small>2022</small>
@@ -175,8 +188,21 @@
     </div>
     <!-- Final do container -->
 
-    <!-- Scriptsm irão ficar abaixo -->
+    <!-- Scripts irão ficar abaixo -->
     <!-- Importação JS do FancyBox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- Importação do JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Scripts específicos da página -->
+    <!-- Linguagem JS = JavaScript -->
+    <script>
+        // Cria a função exibeMenu
+        function exibeMenu() {
+            // Exibe/oculta o Menu Mobile(hamburguer)
+            $('#exibe-menu').toggle()
+        }
+    </script>
 </body>
 </html>
