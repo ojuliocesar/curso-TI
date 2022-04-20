@@ -37,7 +37,7 @@ main {
 
 #produtos {
     width: 100%;
-    height: 500px;
+    height: auto;
     float: left;
     background-color: darkblue;
 }
@@ -51,7 +51,7 @@ main {
 
 #destaques {
     width: 100%;
-    height: 500px;
+    height: auto;
     float: left;
     background-color: khaki;
 }
@@ -69,3 +69,25 @@ footer {
     float: left;
     background-color: darkred;
 }
+
+/* Final da versão DESKTOP */
+
+/* Inicio da versão MOBILE */
+
+@media only screen and (max-width: 700px) {
+    #container {
+        width: 100%;
+    }
+
+    .produtos-colunas {
+        width: 50%;
+        height: 400px;
+    }
+
+    .destaques-colunas {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/* Final da versão MOBILE  */
