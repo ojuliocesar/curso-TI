@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dino</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+                <nav class="main-nav">
+                    <ul class="list-nav">
+                        <a class="main-action" href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <li- class="main-items">Home</li>
+                        </a>
+                        <a class="main-action" href="#sobre">
+                            <li class="main-items">Sobre</li>
+                        </a>
+                        <a class="main-action" href="#imortal">
+                            <li class="main-items">Imortal</li>
+                        </a>
+                        <a class="main-action" href="#velocidade">
+                            <li class="main-items">Velocidade</li>
+                        </a>
+                        <a class="main-action" href="#video">
+                            <li class="main-items">Vídeo</li>
+                        </a>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <div id="sobre">
+                <h1 class="main-title">T-Rex Game</h1>
+
+                <p>O T-Rex Game foi criado em 2014, pela Google, para manter pessoas intretidas ao estarem Offline da internet</p>
+                <p>Hoje, iremos ver como "Hacker" o jogo, pra você mostrar seus pontos pro seu amiguinho e chamar ele de noob</p>
+            </div>
+
+            <div id="imortal">
+                <h2 class="main-title -h2">Hackeando o Dino</h2>
+
+                <h2 class="main-title">Imortal</h2>
+
+                <ul class="list-sobre">
+                    <li>Primeiramente, acesse o site: <span class="code">chrome://dino</span></li>
+
+                    <li>Clique com o botão direito na tela, e  clique em "inspecionar"</li>
+                    <img src="img/inspecionar.png" alt="Inspecionar">
+
+                    <li>Depois, vá para aba "Console"</li>
+                    <img src="img/console.png" alt="console">
+
+                    <li>Em seguida, digite: <span class="code">var original = Runner.prototype.gameOver</span><br><br>
+                        (Isso irá nos abrir a porta para fuçar no Dino)></li>
+                    <img src="img/1img.png" alt="Primeiro Código">
+
+                    <li>Ainda na mesma tela, digite: <span class="code">Runner.prototype.gameOver = function () {}</span></li>
+                    <img src="img/img2.png" alt="segundo código">
+
+                    <li>Sendo direto, isso irá deixar o Dino Imortal</li>
+
+                    <li>Ainda não saia do console, poderemos adicionar mais trapaças, como vou mostrar a seguir</li>
+                </ul>
+            </div>
+
+            <div id="velocidade">
+                <h2 class="main-title -h2">Super Velocidade</h2>
+            <ul class="list-sobre">
+                <li>Ainda em Console, digite: <span class="code">Runner.instance_.setSpeed(100)</span></li>
+                <img src="img/img3.png" alt="terceiro código">
+                <li>Isso irá deixar o nosso querido Dino mais rápido (na verdade, muito mais rápido)</li>
+            </ul>
+            </div>
+        </main>
+
+        <footer>
+            <div id="video">
+                <div class="wrapper">
+                    <p>
+                        Bom, agora seu Dino irá avançar e avançar para sempre, para não ficar entediado enquanto seu Dino bate todos os recordes do mundo, assista 1 hora de Pica Pau antigo, boa sorte parceiro
+                    </p>
+                </div>
+    
+                <iframe width="710" height="393" src="https://www.youtube.com/embed/3pg0bbTzqcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </footer>
+    </body>
+</html>
