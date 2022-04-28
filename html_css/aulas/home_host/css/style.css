@@ -59,3 +59,38 @@ nav {
 .nav-items li a:hover {
     color: #CCC;
 }
+
+.default-btn {
+    padding: 15px 20px;
+    background-color: #2CC764;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.default-btn:hover {
+    background-color: #22BB5F;
+    color: #fff;
+}
+
+.main-banner {
+    background-image: url('../img/mainbanner.png');
+    padding: 10em 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.main-banner h1, .main-banner p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-banner h1 {
+    font-size: 54px;
+}
+
+.main-banner p{
+    font-size: 32px;
+}
+
