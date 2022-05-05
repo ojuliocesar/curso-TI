@@ -1,5 +1,7 @@
 Sites citados: 
 https://caniuse.com/css-grid
+https://cdnjs.com/libraries/font-awesome
+https://fancyapps.com/
 
 Site de caracteres: https://www.rapidtables.com/web/html/html-codes.html
 
