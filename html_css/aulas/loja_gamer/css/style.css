@@ -10,7 +10,6 @@ body {
     margin: 0;
 }
 
-
 :root {
     --color-white: #fff;
 }
@@ -133,7 +132,12 @@ body {
 }
 
 .carousel__slide {
-    width: 100%;
+    max-width: var(--carousel-slide-with, 40%);
+}
+
+.carousel__button.is-prev, .carousel__button.is-next {
+    color: #fff;
+    background-color: #000;
 }
 
 .banner2 {
@@ -168,6 +172,12 @@ body {
     font-weight: normal;
     color: #c2c2c2;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #container {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -208,6 +218,15 @@ body {
     }
 
     .categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel__slide {
+        width: 100%;
+        max-width: none;
+    }
+
+    .rodape {
         grid-template-columns: 1fr;
     }
 }

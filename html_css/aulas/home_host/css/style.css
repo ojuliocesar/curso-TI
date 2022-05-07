@@ -286,6 +286,7 @@ nav {
     position: relative;
     width: 468px;
     height: 150px;
+    resize: none;
 }
 
 .contact-container input[type=submit] {
