@@ -138,6 +138,7 @@ body {
 .carousel__button.is-prev, .carousel__button.is-next {
     color: #fff;
     background-color: #000;
+    border-radius: 30%;
 }
 
 .banner2 {
