@@ -90,9 +90,10 @@ header div#chamada {
 }
 
 section#final-de-semana {
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 div#final-semana-esquerda, div#final-semana-direita {
@@ -121,4 +122,38 @@ div#pontos-chaves-mestre {
 div#pontos-chaves {
     text-align: center;
     width: 25%;
+}
+
+section#final-de-semana div#pontos-chaves ion-icon {
+    width: 75px;
+    height: 75px;
+    color: #f03733;
+}
+
+div.folha1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-image: url(../img/secao09-folha1.png);
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+div.camarao {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    background: url(../img/secao09-camarao.jpg) no-repeat;
+    width: 150px;
+    height: 150px;
+}
+
+div.folha2 {
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    background: url(../img/secao09-folha2.png) no-repeat;
+    width: 150px;
+    height: 150px;
 }

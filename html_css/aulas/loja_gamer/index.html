@@ -27,32 +27,34 @@
                 <a class="texto-menu" href="">Cadastrar-se</a>
             </div>
             <div class="item">
-                <a class="texto-menu texto-responsivo" href="">Seu carrinho</a>
-                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                <a class="texto-menu" href="">
+                    <span class="carrinho-texto">Seu carrinho</span>
+                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                </a>
             </div>
         </header>
 
         <div id="container-interno">
             <nav class="nav-bar">
                 <div class="item-navbar">
-                    <i class="fa-solid fa-bars fa-2x"></i>
+                    <i class="fa-solid fa-bars fa-2x" onclick="exibeMenu()"></i>
                 </div>
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="text-navbar" href="">Categoria</a>
                 </div>
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="text-navbar" href="">Jogos</a>
                 </div>
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="text-navbar" href="">Consoles</a>
                 </div>
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="text-navbar" href="">Acessórios</a>
                 </div>
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="text-navbar" href="">Periféricos</a>
                 </div>
-                <div class="item-navbar">
+                <div class="item-navbar oculta-navbar">
                     <a class="text-navbar" href="">Peças de Reposição</a>
                 </div>
             </nav>
@@ -176,6 +178,11 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- Importação do JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Scripts expecíficos da página -->
     <script src="js/script.js"></script>
 </body>
 </html>

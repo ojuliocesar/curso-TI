@@ -55,10 +55,6 @@ body {
     text-decoration: none;
 }
 
-.fa-solid {
-    margin-left: 15px;
-}
-
 .nav-bar {
     width: 100%;
     background-color: #fff;
@@ -135,10 +131,20 @@ body {
     max-width: var(--carousel-slide-with, 40%);
 }
 
+.carousel__dots {
+    color: #fff;
+    /* margin-top: -30px !important; */
+}
+
 .carousel__button.is-prev, .carousel__button.is-next {
     color: #fff;
     background-color: #000;
+    opacity: 85%;
     border-radius: 30%;
+}
+
+.carousel {
+    --carousel-button-svg-stroke-width: 2.5;
 }
 
 .banner2 {
@@ -229,5 +235,13 @@ body {
 
     .rodape {
         grid-template-columns: 1fr;
+    }
+
+    .carrinho-texto {
+        display: none;
+    }
+
+    .oculta-navbar {
+        display: none;
     }
 }
