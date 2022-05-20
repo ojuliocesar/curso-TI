@@ -109,3 +109,24 @@ section#pizza ul li {
     font-size: 90%;
     text-transform: uppercase;
 }
+
+section#testemunhas p.destaque {
+    width: 40%;
+    background-color: rgba( 255, 255, 255, 0.7);
+}
+
+section#plano-principal h4 {
+    color: #d90404;
+}
+
+section#plano-principal ul {
+    margin-top: 25px;
+}
+
+section#plano-principal ul li {
+    font-size: 85%;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 2;
+    text-decoration: none;
+}
