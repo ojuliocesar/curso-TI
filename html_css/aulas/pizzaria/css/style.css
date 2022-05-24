@@ -373,3 +373,67 @@ div#testemunhos ul img {
     box-shadow: 2px 2px 3px #ccc;
     cursor: pointer;
 }
+
+#transicao-plano-rodape {
+    width: 100%;
+    height: 36px;
+    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.5)), url("../img/secao15-mesa-xadrez-clara.png");
+    background-repeat: repeat-x;
+    margin-top: 100px;
+}
+
+footer {
+    padding-top: 36px;
+    padding-left: 36px;
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/secao15-mesa-xadrez.png");
+    background-repeat: repeat;
+    border-bottom: 10px solid #f03733;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer .mapa {
+    width: 35%;
+    height: 390px;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 3px 10px #404040;
+}
+
+footer .info {
+    width: 30%;
+    height: 390px;
+    background-color: #f03733;
+    box-shadow: 0 3px 10px #404040;
+}
+
+footer .redes-sociais {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+footer .redes-sociais ion-icon {
+    color: #fff;
+    height: 100%;
+    width: 17%;
+    cursor: pointer;
+}
+
+footer .redes-sociais ion-icon:hover {
+    color: #f2b705;
+    transition-duration: 0.3s;
+}
+
+footer .pizza-rodape-decoracao {
+    width: 300px;
+    height: 390px;
+    margin-top: -100px;
+    background-image: url("../img/secao15-pizza-rodape.png");
+    background-repeat: no-repeat;
+}

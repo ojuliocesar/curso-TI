@@ -130,3 +130,22 @@ section#plano-principal ul li {
     line-height: 2;
     text-decoration: none;
 }
+
+#plano-principal .planos-button p {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px;
+}
+
+footer .info ul {
+    margin-left: 15px;
+    margin-bottom: 120px;
+}
+
+footer .info li {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 5px;
+}
