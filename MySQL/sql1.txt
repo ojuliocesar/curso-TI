@@ -63,20 +63,3 @@ EX: INSERT INTO tb_pizzas (sabor, ingredientes, valor,
 
 <====================================================>
 
-<==================Exclusão de item==================>
-
-DROP = serve para excluir itens
-EX: drop database db_nome;
-
-<====================================================>
-
-<====================Sistema Crud====================>
-
-Um sistema crud nos permite criar, inserir uma informação, atualizar e deletar 
-dados
-
--Create
--read
--update
--delete
-<====================================================>

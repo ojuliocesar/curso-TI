@@ -1,0 +1,12 @@
+Shell = CLI = command line interface
+
+1° Abrir mysql
+
+			<======== comandos ========>
+
+Para abrir: mysql -u root			-u = usuario : root
+
+
+			  <======== OBS ========>
+
+Comandos sempre acabam em ";"
