@@ -61,12 +61,18 @@ header div#chamada h1 {
     color: #FFF;
     /* deslocamento-x | deslocamento-y | raio-de-destoque | cor */
     text-shadow: 4px 6px 10px #000;
+    animation-name: HeaderH1-moverDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
 header div#chamada h4 {
     font-size: 250%;
     text-shadow: 4px 6px 10px #000;
     margin-bottom: 55px;
+    animation-name: HeaderH1-moverEsquerda;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
 header div#chamada a{
@@ -78,6 +84,9 @@ header div#chamada a{
     padding: 20px 80px;
     border-radius: 50px;
     display: inline-block;
+    animation-name: HeaderH1-moverCima;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
 /* SEÇÃO - FINAL DE SEMANA */

@@ -26,6 +26,11 @@ nav ul#esquerda {
     float: left;
 }
 
+nav ul#icone-menu-mobile {
+    float: right;
+    display: none;
+}
+
 nav ul#direita {
     float: right;
 }
@@ -175,7 +180,7 @@ div.folha3 {
 div.tomate {
     position: absolute;
     top: 300px;
-    left: 100px;
+    left: 20px;
     width: 160px;
     height: 150px;
     background: url(../img/secao09-tomate.png) no-repeat;

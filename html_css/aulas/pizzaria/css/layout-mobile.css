@@ -21,3 +21,83 @@ nav ul {
     flex-wrap: nowrap;
     justify-content: left;
 }
+
+nav ul#esquerda, nav ul#direita{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    background-color: #000;
+    display: none;
+}
+
+nav ul#direita {
+    top: 190px;
+}
+
+nav ul#icone-menu-mobile {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a, nav ul li a#criar-conta, .itemEstatico, .iconeEstatico {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 0;
+    font-size: 80%;
+    border: none;
+}
+
+div#pontos-chaves-mestre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+div.pontos-chaves {
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+div.pontos-chaves p {
+    font-size: 115%;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+div#testemunha-centro {
+    width: 340px;
+    font-weight: 300;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul p {
+    font-size: 115%;
+}
+
+section#plano-principal {
+    height: 100%;
+}
+div#planos-janela {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.planos {
+    width: 290px;
+    margin: 30px;
+}
+
+footer div.mapa {
+    display: none;
+}
+
+footer div.info {
+    width: 100%;
+}
