@@ -89,15 +89,15 @@ div#planos-janela {
     align-items: center;
 }
 
-div.planos {
+div#planos {
     width: 290px;
     margin: 30px;
 }
 
-footer div.mapa {
+footer div#mapa {
     display: none;
 }
 
-footer div.info {
+footer div#info {
     width: 100%;
 }

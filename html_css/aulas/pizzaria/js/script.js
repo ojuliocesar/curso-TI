@@ -1,85 +1,114 @@
 $('section#final-semana').waypoint(
-    function(direcao) {
-        if (direcao == "down") {
+    function(direcao){
+        if(direcao =="down"){
             $('div.folha1').addClass('animate__animated animate__fadeInUp')
-            $('div.folha2').addClass('animate__animated animate__fadeInUp')
             $('div.folha3').addClass('animate__animated animate__fadeInUp')
-            $('div.camarao').addClass('animate__animated animate__fadeInUp')
-            $('div.queijo').addClass('animate__animated animate__fadeInUp')
-            $('div.tomate').addClass('animate__animated animate__fadeInUp')
-        } if(direcao == "up") {
+            $('div.camarao').addClass('animate__animated animate__fadeInUp animate__slow')
+            $('div.tomate').addClass('animate__animated animate__fadeInUp animate__slow')
+            $('div.folha2').addClass('animate__animated animate__fadeInUp animate__slower')
+            $('div.queijo').addClass('animate__animated animate__fadeInUp animate__slower')
+        }
+        if(direcao == "up"){
             $('div.folha1').removeClass('animate__animated animate__fadeInUp')
-            $('div.folha2').removeClass('animate__animated animate__fadeInUp')
             $('div.folha3').removeClass('animate__animated animate__fadeInUp')
-            $('div.camarao').removeClass('animate__animated animate__fadeInUp')
-            $('div.queijo').removeClass('animate__animated animate__fadeInUp')
-            $('div.tomate').removeClass('animate__animated animate__fadeInUp')
+            $('div.camarao').removeClass('animate__animated animate__fadeInUp animate__slow')
+            $('div.tomate').removeClass('animate__animated animate__fadeInUp animate__slow')
+            $('div.folha2').removeClass('animate__animated animate__fadeInUp animate__slower')
+            $('div.queijo').removeClass('animate__animated animate__fadeInUp animate__slower')
         }
-    }, {
-        // Indica quantos pixels antes do elemento o efeito começará a ser aplicado
-        offset: '440px;'
-})
+    
+    },{
+        offset:'450px;'
+    })
 
-$('div#transicao-testemunha-plano').waypoint(
-    function(direcao) {
-        if (direcao == "down") {
-            $('div#decoracao1').removeClass('animate__animated animate__fadeOutLeft')
-            $('div#decoracao3').removeClass('animate__animated animate__fadeOutRight')
-
-            $('div#decoracao1').addClass('animate__animated animate__fadeInLeft')
-            $('div#decoracao2').addClass('animate__animated animate__fadeInUp')
-            $('div#decoracao3').addClass('animate__animated animate__fadeInRight')
-        } if(direcao == "up") {
-            $('div#decoracao1').removeClass('animate__animated animate__fadeInLeft')
-            $('div#decoracao3').removeClass('animate__animated animate__fadeInRight')
+    $('section#pizza').waypoint(function(direcao){
+        if(direcao== 'down'){
+            $('section#pizza p').addClass('animate__animated animate__fadeInUp');
+            $('section#pizza div.pizza-opcoes').addClass('animate__animated animate__fadeInUp animate__slower');
+            
         }
-    }, {
-        // Indica quantos pixels antes do elemento o efeito começará a ser aplicado
-        offset: '560px;'
-})
-
-$('div#transicao-testemunha-plano').waypoint(
-    function(direcao) {
-        if(direcao == "up") {
-            $('div#decoracao1').addClass('animate__animated animate__fadeOutLeft')
-            $('div#decoracao3').addClass('animate__animated animate__fadeOutRight')
+        if(direcao =='up'){
+            $('section#pizza p').removeClass('animate__animated animate__fadeInUp');
+            $('section#pizza div.pizza-opcoes').removeClass('animate__animated animate__fadeInUp animate__slower');
         }
-    }, {
-        // Indica quantos pixels antes do elemento o efeito começará a ser aplicado
-        offset: '-190px;'
-})
+    },{
+        offset:'450px;'
+    })
 
-$('section#plano-principal').waypoint(
-    function(direcao) {
-        if (direcao == "down") {
-            $('div.planos1').removeClass('animate__animated animate__fadeOutLeft')
-            $('div.planos2').removeClass('animate__animated animate__fadeOutDown')
-            $('div.planos3').removeClass('animate__animated animate__fadeOutRight')
+    $('div#testemunhos ul:eq(0)').css('opacity',0);
+    $('div#testemunhos ul:eq(1)').css('opacity',0);
+    $('div#testemunhos ul:eq(2)').css('opacity',0);
 
-            $('div.planos1').addClass('animate__animated animate__fadeInLeft')
-            $('div.planos2').addClass('animate__animated animate__fadeInUp')
-            $('div.planos3').addClass('animate__animated animate__fadeInRight')
-        } if (direcao == "up") {
-            $('div.planos1').removeClass('animate__animated animate__fadeInLeft')
-            $('div.planos2').removeClass('animate__animated animate__fadeInUp')
-            $('div.planos3').removeClass('animate__animated animate__fadeInRight')
+    $('section#testemunha ').waypoint(function(direcao){
+        if(direcao =='down'){
+            $( 'div#testemunhos ul:eq(0)').addClass('animate__animated animate__fadeInUp animate__slower');
+            $( 'div#testemunhos ul:eq(1)').addClass('animate__animated animate__fadeInUp animate__slow');
+            $( 'div#testemunhos ul:eq(2)').addClass('animate__animated animate__fadeInUp animate__slower');
         }
-    }, {
-        // Indica quantos pixels antes do elemento o efeito começará a ser aplicado
-        offset: '250px;'
-})
-
-$('section#plano-principal').waypoint(
-    function(direcao) {
-         if (direcao == "up") {
-            $('div.planos1').addClass('animate__animated animate__fadeOutLeft')
-            $('div.planos2').addClass('animate__animated animate__fadeOutDown')
-            $('div.planos3').addClass('animate__animated animate__fadeOutRight')
+        if(direcao =='up'){
+            $( 'div#testemunhos ul:eq(0)').removeClass('animate__animated animate__fadeInUp animate__slower');
+            $( 'div#testemunhos ul:eq(1)').removeClass('animate__animated animate__fadeInUp animate__slow');
+            $( 'div#testemunhos ul:eq(2)').removeClass('animate__animated animate__fadeInUp animate__slower');
         }
-    }, {
-        // Indica quantos pixels antes do elemento o efeito começará a ser aplicado
-        offset: '-300px;'
-})
+    },{ 
+    })
+
+    $('div#transicao-testemunha-plano').waypoint(
+        function(direcao){
+            if(direcao =="down"){
+                $( 'div#decoracao1').addClass('animate__animated animate__fadeInLeft animate__slow');
+                $( 'div#decoracao2').addClass('animate__animated animate__fadeIn animate__slow');
+                $( 'div#decoracao3').addClass('animate__animated animate__fadeInRight animate__slow');
+            }
+            if(direcao == "up"){
+                $( 'div#decoracao1').removeClass('animate__animated animate__fadeInLeft animate__slow');
+                $( 'div#decoracao2').removeClass('animate__animated animate__fadeIn animate__slow');
+                $( 'div#decoracao3').removeClass('animate__animated animate__fadeInRight animate__slow');
+            }
+        
+        },{
+            offset:'550px;'
+        })
+
+        $('section#plano-principal').waypoint(
+            function(direcao){
+                if(direcao =="down"){
+                    $( 'div.planos:eq(0)').removeClass('animate__animated animate__fadeOutLeft animate__slow');
+                    $( 'div.planos:eq(1)').removeClass('animate__animated animate__fadeOutUp animate__slow'); 
+                    $( 'div.planos:eq(2)').removeClass('animate__animated animate__fadeOutRight animate__slow');
+
+                    $( 'div.planos:eq(0)').addClass('animate__animated animate__fadeInLeft animate__slow');
+                    $( 'div.planos:eq(1)').addClass('animate__animated animate__fadeInUp animate__slow'); 
+                    $( 'div.planos:eq(2)').addClass('animate__animated animate__fadeInRight animate__slow');
+                }
+                if(direcao == "up"){
+                    $( 'div.planos:eq(0)').addClass('animate__animated animate__fadeOutLeft animate__slow');
+                    $( 'div.planos:eq(1)').addClass('animate__animated animate__fadeOutUp animate__slow'); 
+                    $( 'div.planos:eq(2)').addClass('animate__animated animate__fadeOutRight animate__slow');
+                   
+                }
+            
+            },{
+                offset:'550px;'
+            })
+
+            
+        $('footer').waypoint(
+            function(direcao){
+                if(direcao =="down"){
+                    $( 'div#mapa').addClass('animate__animated animate__fadeIn');
+                    $( 'div#info').addClass('animate__animated animate__fadeIn');
+                    $( 'div#pizza-rodape-decoracao').addClass('animate__animated animate__fadeIn');
+                }
+                if(direcao == "up"){
+                    $( 'div#mapa').removeClass('animate__animated animate__fadeIn');
+                    $( 'div#info').removeClass('animate__animated animate__fadeIn');
+                    $( 'div#pizza-rodape-decoracao').removeClass('animate__animated animate__fadeIn');
+                }
+            
+            },{
+                offset:'650px;'
+            })
 
 
 function mostrarMenu() {

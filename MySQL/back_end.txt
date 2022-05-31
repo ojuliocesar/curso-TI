@@ -9,7 +9,6 @@ Frameworks JS para Front-End
 Python
 
 
-
 BACK-END
 
 Linguagem de Programação (WEB)
@@ -54,7 +53,7 @@ Servidor
 Apache = Servidor Web
 PHP = interpretar a linguagem
 
- MySQL = Banco de Dados
+MySQL = Banco de Dados
 
 XAMPP
 X = CrossPlattform(Windows, Linux, MAC)
@@ -63,13 +62,13 @@ M = MySQL(MariaDB) (Servidor BD)
 P = PHP (Linguagem de Programação)
 P = Pearl (Linguagem de Programação)
 
- SGBD
- Sistema Gerenciador de Banco de Dados 
- HeidiSQL
+SGBD
+Sistema Gerenciador de Banco de Dados 
+HeidiSQL
 
 Alternativas
- Workbench
- PHPMyAdmin
+Workbench
+PHPMyAdmin
 
 Linux = LAMP
 Windows = AMP 

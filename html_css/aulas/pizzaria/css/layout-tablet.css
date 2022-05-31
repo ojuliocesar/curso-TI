@@ -52,18 +52,18 @@ div.planos {
     }
 }
 
-footer div.mapa, footer div.info {
+footer div#mapa, footer div#info {
     width: 45%;
 }
 
-footer div.info {
+footer div#info {
     margin-right: 35px;
 }
 
-footer div.redes-sociais ion-icon {
+footer div#redes-sociais ion-icon {
     width: 10%;
 }
 
-footer div.pizza-rodape-decoracao {
+footer div#pizza-rodape-decoracao {
     display: none;
 }

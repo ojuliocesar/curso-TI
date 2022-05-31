@@ -20,7 +20,5 @@ Atividades
 10-> Listar os produtos da marca bosh e funko
 
 11-> Listar os produtos da categoria 11 (games)
- 
-
 
 show datab
