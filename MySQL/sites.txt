@@ -1,1 +1,0 @@
-https://pt.wikibooks.org/wiki/SQL/Alterando_dados#:~:text=Na%20linguagem%20SQL%2C%20para%20alterarmos,ser%20realizado%20sem%20o%20WHERE.
