@@ -1,0 +1,70 @@
+SHOW DATABASES;
+-- Exibe as databases do servidor que o usuário tem acesso
+
+USE db_pizzaria;
+-- seleciona a database que iremos utilizar
+
+SHOW TABLES;
+-- Exibe as tabelas da database selecionada
+
+CREATE TABLE tb_pizzas (id INT AUTO_INCREMENT PRIMARY KEY, sabor VARCHAR(40) NOT NULL, ingredientes VARCHAR(80) NOT NULL, valor FLOAT(6,2) NOT NULL, tamanho CHAR(1) NOT NULL);
+
+DESC tb_pizzas;
+-- Exibe a estrutura da tabela criada
+
+SELECT * FROM tb_pizzas;
+-- Mostra todos os registros e colunas da tabela 
+
+INSERT INTO tb_pizzas (sabor, ingredientes, valor, tamanho) VALUES ('Calabresa', 'Mussarela e calabresa', 39, 'G');
+
+select * from tb_produto where id_categoria=x
+-- Exibe todas as colunas mas apenas os produtos da categoria selecionada
+
+select * from tb_produto where fabricante='x';
+-- Exibe todas as colunas mas apenas os produtos da fabricante selecionada
+
+select * from tb_produto where valor<=500;
+-- Ira exibir apenas produtos menores ou igual que 500
+
+select * from tb_produto where valor>=500;
+-- Ira exibir apenas produtos maiores ou igual que 500
+
+select * from tb_produto where valor=500;
+-- Ira exibir apenas produtos iguais a 500
+
+select * from tb_produto where fabricante='funko' and valor<=150;
+-- exibe todos os produtos da fabricante 'funko' com valor menor ou igual que 150
+
+select count(id) from tb_produto;
+-- Conta quantos produtos tem na tabela 
+
+select max(valor) from tb_produto;
+-- Mostra o maior valor da coluna
+
+select min(valor) from tb_produto;
+-- Mostra o menor valor da coluna
+
+select avg(valor) from tb_produto;
+-- Mostra a media do valor da coluna
+
+select sum(valor) from tb_produto;
+-- Mostra a soma dos valores da coluna
+
+select sum(valor)*sum(quantidade) from tb_produto;
+-- Mostra a multiplicação da soma dos valores e quantidades
+
+select produto,valor,valor*quantidade as total from tb_produto;
+--
+
+select * from tb_produto order by valor;
+-- Mostra todos os produtos em ordem de valor do menor para o maior
+
+
+select * from tb_produto order by produto;
+-- Mostra todos os produtos em ordem alfabetica pelos produtos
+
+select * from tb_produto order by valor desc;
+-- Mostra todos os produtos em ordem de valor do maior para o menor
+
+select * from tb_produto limit 3;
+-- Mostra até o terceiro intem pela ordem do id

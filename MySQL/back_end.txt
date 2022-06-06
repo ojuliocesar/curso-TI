@@ -1,0 +1,80 @@
+FRONT-END
+-HTML / CSS / JS
+
+Frameworks JS para Front-End
+-REACT JS*
+-ANGULAR JS
+-VUE JS
+
+Python
+
+
+BACK-END
+
+Linguagem de Programação (WEB)
+-PHP
+-NodeJS (JS ServerSide)
+-Java
+
+Banco de Dados
+-MySQL(SQL)
+-SQL Server(SQL)
+-Oracle(SQL)
+-Postgres(SQL)
+-MongoDB(No-SQL)
+-Firebase(No-SQL)
+
+
+Stack de desenvolvimento
+Conjunto de tecnologia
+
+Stack +Convencional
+HTML/CSS/JS
+PHP/MYSQL
+
+Stack(Hype)
+ReactJS
+NodeJS /MongoDB
+
+
+
+Configuração do ambiente - Frontend
+
+HTML / CSS / JS
+
+
+
+Configuração do ambiente - Backend
+
+Servidor Web = Apache/ Nginx(EngineX)
+(Linux), LightHTTP entre outros
+
+Servidor
+Apache = Servidor Web
+PHP = interpretar a linguagem
+
+MySQL = Banco de Dados
+
+XAMPP
+X = CrossPlattform(Windows, Linux, MAC)
+A = Apache (Servidor Web)
+M = MySQL(MariaDB) (Servidor BD)
+P = PHP (Linguagem de Programação)
+P = Pearl (Linguagem de Programação)
+
+SGBD
+Sistema Gerenciador de Banco de Dados 
+HeidiSQL
+
+Alternativas
+Workbench
+PHPMyAdmin
+
+Linux = LAMP
+Windows = AMP 
+
+Resumo do ambiente de desenvolvimento
+Ambiente DEV Web
+-VSCode 
+-XAMPP
+-Heidi

@@ -1,0 +1,82 @@
+Database = base de dados (db)
+
+table = Tabelas
+
+<=====================================>
+Database é a comoda e a tabela a gaveta
+<=====================================>
+
+SHOW = comando de exibição de alguma
+informação 
+EX: SHOW DATABASE;
+    SHOW TABLE; (ver oque tem dentro das db)
+
+-- "Comentario";
+
+USE = comando de identificar qual databases
+iremos usar
+EX: USE db_lucas;
+
+
+CREAT = comando para criar
+EX: CREATE TABLE tb_nomedatabela (id 
+auto_incriment, sabor varchar() NOT NULL,
+valor float(6,2) NOT NULL, tamanho CHAR(1) NOT NULL);
+
+<=================Tipos de tags=====================>
+AUTO_INCRIMENT: serve para poder adicionar
+mais um valor na casa de baixo
+
+ID 1
+ID 2
+ID 3
+
+NOT NULL: item não pode ficar vazio
+
+float(6,2): Serve para limitar o tanto de casas
+que se pode ter,e quantas casa se conta dps da
+vírgula
+EX: 9999,99
+
+<====================================================>
+
+DESC: mostra a descrição de cada item da tabela
+(so funciona com tabela)
+EX: DESC tb_pizza;
+
+SELECT * FROM tb_pizza = seleciona todos itens ta 
+tabela
+
+SELECT sabor,valor FROM tb_pizzas = seleciona casas
+especificas da tabela
+
+<==================Inserção de item==================>
+
+INSERT INTO tb_pizzas (valor1, valor2, valor3, valor4) 
+VALUES('valor1', 'valor2', valor3, 'valor4') 
+= para inserir valores na tabela, 1° voce aciona os
+itens e logo apos os valores que neles iram;
+
+EX: INSERT INTO tb_pizzas (sabor, ingredientes, valor,
+ tamanho) VALUES('Calabresa', 'Mussarela e calabresa',
+ 39, 'G'); 
+
+<====================================================>
+
+<==================Exclusão de item==================>
+
+DROP = serve para excluir itens
+EX: drop database db_nome;
+
+<====================================================>
+
+<====================Sistema Crud====================>
+
+Um sistema crud nos permite criar, inserir uma informação, atualizar e deletar 
+dados
+
+-Create
+-read
+-update
+-delete
+<====================================================>
