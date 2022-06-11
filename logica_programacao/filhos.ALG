@@ -11,7 +11,7 @@ filhos:inteiro
 soma, somaFilho:inteiro
 media, maior, mediaFilho:real
 
-porc, quantidade:inteiro
+porc, quantidade, quantidadePorc:inteiro
 resultPorc:real
 
 Inicio
@@ -50,6 +50,7 @@ fimse
 se (salario < 150) entao
 
 porc <- porc + 1
+quantidadePorc <- quantidadePorc + 1
 
 fimse
 
@@ -62,7 +63,7 @@ quantidade <- quantidade - 1
 media <- soma / quantidade
 mediaFilho <- somaFilho / quantidade
 
-resultPorc <- porc / quantidade
+resultPorc <- porc / quantidadePorc
 resultPorc <- resultPorc * 100
 
 escreval("A média do salário da população é ",media,"R$")
