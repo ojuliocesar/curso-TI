@@ -17,3 +17,5 @@ pdf CSS: https://www.w3c.br/pub/Cursos/CursoCSS3/css-web.pdf
 Anotações: Case Sensitive é a forma de diferenciar maiúsculas de minúsculas.
 
 JQuery: biblioteca para menu hamburguer.
+
+MySQL: https://dev.mysql.com/doc/refman/8.0/en/integer-types.html
