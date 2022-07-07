@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Title -->
+    <title>Javascript - Básico</title>
+
+    <!-- Meta TAGs -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript</h1>
+
+        <h5>Manipulando elementos HTML</h5>
+
+        <button onclick="soma()" id="button">Somar</button>
+
+        <button onclick="soma2(5,10)">Outro soma</button>
+        
+        <div id="calculadora">
+            
+            <h4>Calculadora - Soma de dois números</h4>
+
+            <form action="" id="main-form">
+
+                <div>
+                    <label for="">Número 1</label>
+                    <input type="number" name="numero1" id="numero1">
+                </div>
+
+                <div>
+                    <label for="">Numero 2</label>
+                    <input type="number" name="numero2" id="numero2">
+                </div>
+
+                <div id="resultado">
+
+                </div>
+
+            </form>
+
+            <button onclick="somaNumeros()">Calcular</button>
+        </div>
+    </div>
+</body>
+
+<!-- Script -->
+<script src="assets/js/script.js"></script>
+</html>
