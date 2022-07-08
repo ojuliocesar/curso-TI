@@ -22,11 +22,9 @@
         <button onclick="soma2(5,10)">Outro soma</button>
         
         <div id="calculadora">
-            
             <h4>Calculadora - Soma de dois números</h4>
 
             <form action="" id="main-form">
-
                 <div>
                     <label for="">Número 1</label>
                     <input type="number" name="numero1" id="numero1">
@@ -40,10 +38,109 @@
                 <div id="resultado">
 
                 </div>
-
             </form>
 
             <button onclick="somaNumeros()">Calcular</button>
+        </div>
+
+        <div id="tecnologias-botoes">
+            <button class="tecnologias-btn" onclick="exibe('html')">HTML</button>
+            <button class="tecnologias-btn" onclick="exibe('css')">CSS</button>
+            <button class="tecnologias-btn" onclick="exibe('js')">JS</button>
+        </div>
+
+        <!-- Ultilizando select - trabalhando com onchange -->
+        <!-- <div id="tecnologias-select">
+            <select name="tecnologia" id="tecnologia" onchange="exibeSelect()">
+                <option value="" disabled selected>Selecione a tecnologia</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+            </select>
+        </div> -->
+
+        <!-- Ultilizando Checkbox -->
+        <div id="tecnologias-select">
+            <h4>Selecione as tecnologias</h4>
+            <div>
+                <input type="checkbox" name="tecnologia" value="tecnologia" id="" onchange="exibe('html')">
+                <label for="">HTML</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="tecnologia" value="tecnologia" id="" onchange="exibe('css')">
+                <label for="">CSS</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="tecnologia" value="tecnologia" id="" onchange="exibe('js')">
+                <label for="">JS</label>
+            </div>
+        </div>
+
+        <!-- Tecnologias -->
+        <div id="tecnologias">
+            <div id="html" class="tec-card" hidden>
+                <h3>HTML</h3>
+
+                <p>Hipertext markup language</p>
+                <p>Linguagem de marcação de hipertexto</p>
+                <p>Versão atual: HTML5</p>
+                <small>Linguagem ultilizada para estruturar o frotend de websites</small>
+            </div>
+
+            <div id="css" class="tec-card" hidden>
+                <h3>CSS</h3>
+
+                <p>Cascading style sheet</p>
+                <p>Folha de estilo em cascata</p>
+                <p>Versão atual: CSS3</p>
+                <small>É um mecanismo para adicionar estilo (cores, fontes, espaçamentos, etc.) a um documento web</small>
+            </div>
+
+            <div id="js" class="tec-card" hidden>
+                <h3>JS</h3>
+
+                <p>JavaScript</p>
+                <p>JavaScript</p>
+                <p>Versão atual: ECMAscript 2018(ES8)</p>
+                <small>JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial dos aplicativos da web</small>
+            </div>
+        </div>
+
+        <div id="estados-cidade">
+            <div id="estados">
+                <label for="">Estado</label>
+                <select name="estado" id="estado" onchange="exibeCidade()">
+                    <option value="" disabled selected>Selecione um estado</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                </select>
+            </div>
+
+            <div id="cidades">
+                <label for="">Escolha a cidade</label>
+
+                <select name="cidade" id="cidade">
+                    <option value="" disabled selected>Aguarde...</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="api-cep">
+            <h3>Consulta CEP - Utilizando API</h3>
+
+            <form action="">
+                <div id="form-grid">
+                    <div>
+                        <label for="cep">CEP</label>
+                        <input type="text" name="cep" id="cep">
+                    </div>
+                </div>
+
+                <input type="button" value="consultar" onclick="consultaCEP()">
+            </form>
         </div>
     </div>
 </body>
