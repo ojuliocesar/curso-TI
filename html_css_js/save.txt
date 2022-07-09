@@ -19,3 +19,9 @@ Anotações: Case Sensitive é a forma de diferenciar maiúsculas de minúsculas
 JQuery: biblioteca para menu hamburguer.
 
 MySQL: https://dev.mysql.com/doc/refman/8.0/en/integer-types.html
+
+Loder: 
+
+https://samherbert.net/svg-loaders/
+https://loading.io/spinner/bars/-bounce-bar-column-chart-equalizer-histogram-rectangle-block-progress-facebook
+https://projects.lukehaas.me/css-loaders/
