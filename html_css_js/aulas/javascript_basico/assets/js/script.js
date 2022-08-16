@@ -1,3 +1,17 @@
+// Funções que são executadas quando a página é carregada
+document.addEventListener('DOMContentLoaded', function(){
+    ocultaLoader()
+})
+
+// Função que exibe o loader
+const exibeLoader = () => {
+    $('.preloader').fadeTo("slow", 1)
+}
+
+const ocultaLoader = () => {
+    $('.preloader').fadeOut("slow", 0)
+}
+
 const soma = () => {
     let numero1 = prompt('Digite o primeiro número')
 
@@ -81,8 +95,23 @@ const exibeCidade = () => {
 // Função que consulta o cep de uma API
 // API utilizada: POSTMON
 
-const consultaCEP= () => {
+const consultaCEP = () => {
     let cep = document.getElementById('cep').value
 
-    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+    exibeLoader()
+    const result = fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(response => response.json())
+        .then(result => {
+            // Reposta final da requisição, já validada em formato JSON
+            // Manipulação do HTML
+            console.log(result)
+
+            document.getElementById('logradouro').value = result.logradouro
+            document.getElementById('bairro').value = result.bairro
+            document.getElementById('localidade').value = result.localidade
+            document.getElementById('uf').value = result.uf
+
+            document.getElementById('numero').focus()
+            ocultaLoader()
+        })
 }
